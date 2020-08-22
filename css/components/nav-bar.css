@@ -15,11 +15,25 @@
   position: relative;
   color: inherit;
 }
+
+@keyframes notifi {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: none;
+  }
+}
 .nav__notification {
   position: absolute;
   left: 15px;
   bottom: 15px;
+  animation: notifi 2s ease-in-out infinite;
 }
+
 .nav__dots {
   background-color: tomato;
   width: 5px;

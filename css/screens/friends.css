@@ -22,3 +22,25 @@
   justify-content: space-between;
   color: rgba(0, 0, 0, 0.5);
 }
+@keyframes splash {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.splash-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  font-size: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: splash 0.4s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
